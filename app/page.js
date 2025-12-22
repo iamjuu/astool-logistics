@@ -9,45 +9,45 @@ import Service from "@/components/service";
 import Footer from "@/components/footer";
 import QuickAnswer from "@/components/quickanswer";
 import Contact from "@/components/contect";
-import { Bolt, Users, LineChart, Clock, Ticket, Database } from "lucide-react";
+import { Truck, Package, Route, Clock, Wallet, BarChart3 } from "lucide-react";
 export default function Home() {
   const items = [
     {
-      icon: <Bolt />,
-      title: "Increased Productivity",
+      icon: <Truck />,
+      title: "Faster Delivery",
       description:
-        "Streamline operations with reliable IT and infrastructure solutions that keep your business running without downtime.",
+        "Streamline your supply chain with efficient logistics solutions that ensure timely delivery and reduced transit times.",
     },
     {
-      icon: <Users />,
+      icon: <Package />,
       title: "Better Customer Experience",
       description:
-        "Deliver smarter, faster, and more secure services that enhance satisfaction and build long-term loyalty.",
+        "Deliver reliable, on-time shipments that enhance customer satisfaction and build long-term trust in your brand.",
     },
     {
-      icon: <LineChart />,
+      icon: <Route />,
       title: "Scalability & Growth",
       description:
-        "Flexible solutions that grow with your business, supporting expansion across Dubai and the UAE.",
+        "Flexible logistics networks that grow with your business, supporting expansion across Dubai and the UAE.",
     },
 
     {
       icon: <Clock />,
       title: "24/7 Availability",
       description:
-        "Round-the-clock support and monitoring ensure your business is always connected and protected.",
+        "Round-the-clock logistics support and tracking ensure your shipments are always monitored and on schedule.",
     },
     {
-      icon: <Ticket />,
+      icon: <Wallet />,
       title: "Cost Reduction",
       description:
-        "Cut operational costs with efficient, scalable systems designed to maximize ROI.",
+        "Optimize shipping costs with efficient route planning and warehouse management designed to maximize savings.",
     },
     {
-      icon: <Database />,
+      icon: <BarChart3 />,
       title: "Data-Driven Insights​",
       description:
-        "Gain real-time visibility and smarter decision-making through connected, automated systems.",
+        "Gain real-time visibility into your supply chain with advanced analytics for smarter logistics decision-making.",
     },
   ];
   return (
@@ -58,7 +58,7 @@ export default function Home() {
         backgroundSize: "full",
         backgroundRepeat: "repeat",
       }}
-      className="min-h-screen  px-2 "
+      className="min-h-screen  py-2 px-2 "
     >
       <div className="flex flex-col ">
         <div>

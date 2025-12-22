@@ -63,7 +63,7 @@ export default function QuickAnswer() {
           {/* Left column: Heading and CTA */}
           <div data-aos="fade-up" data-aos-delay={0}>
             <p className="text-sm text-gray-600 mb-2">Frequently Asked Questions</p>
-            <h2 className="text-[28px] sm:text-[34px] leading-tight font-semibold text-[#FFCB05] mb-4">
+            <h2 className="text-[28px] sm:text-[34px] leading-tight font-semibold text-[#327D59] mb-4">
               Quick Answers. Clear Solutions.
             </h2>
             <p className="text-gray-700 text-sm sm:text-base leading-relaxed max-w-[48ch]">
@@ -73,7 +73,7 @@ export default function QuickAnswer() {
 
             <div className="mt-10">
               <p className="text-red-600 text-[12px] mb-3">Didn’t find your question?</p>
-              <Button as="a" href="#contact" className=" border border-[#FFCB05] text-black hover:bg-[#FFCB05]/90">
+              <Button as="a" href="#contact" className=" border border-[#327D59] text-black hover:bg-[#327D59]/90">
                 Contact Us Now
               </Button>
             </div>

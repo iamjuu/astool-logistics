@@ -35,7 +35,7 @@ const Index = () => {
         {/* Left content */}
         <div data-aos="fade-up" data-aos-delay={0}>
           <div className="mb-6">
-            <h2 className="text-xl font-[400] text-[#FFCB05]">Share Your Details</h2>
+            <h2 className="text-xl font-[400] text-[#327D59]">Share Your Details</h2>
           </div>
           <p className="text-gray-700 text-[14px]  leading-7 mb-8">
             Have questions about our services?
@@ -77,7 +77,7 @@ const Index = () => {
         {/* Right content - Form */}
         <div className="w-full" data-aos="fade-up" data-aos-delay={150}>
           <div className="flex justify-end mb-6" data-aos="fade-up" data-aos-delay={250}>
-            <button className="inline-flex items-center gap-2 bg-[#FFCB05] text-white px-5 py-3 rounded-full shadow-sm">
+            <button className="inline-flex items-center gap-2 bg-[#327D59] text-white px-5 py-3 rounded-full shadow-sm">
               <span className="h-2.5 w-2.5 rounded-full bg-white" />
               Get in Touch
             </button>
@@ -99,7 +99,7 @@ const Index = () => {
               <input
                 type="text"
                 placeholder="Please enter your name"
-                className="w-full border border-gray-200 rounded-md h-12 px-4 focus:outline-none focus:ring-2 focus:ring-[#FFCB05]"
+                className="w-full border border-gray-200 rounded-md h-12 px-4 focus:outline-none focus:ring-2 focus:ring-[#327D59]"
               />
             </div>
             <div data-aos="fade-up" data-aos-delay={400}>
@@ -107,7 +107,7 @@ const Index = () => {
               <input
                 type="email"
                 placeholder="Please enter your email"
-                className="w-full border border-gray-200 rounded-md h-12 px-4 focus:outline-none focus:ring-2 focus:ring-[#FFCB05]"
+                className="w-full border border-gray-200 rounded-md h-12 px-4 focus:outline-none focus:ring-2 focus:ring-[#327D59]"
               />
             </div>
             <div data-aos="fade-up" data-aos-delay={450}>
@@ -115,12 +115,12 @@ const Index = () => {
               <textarea
                 placeholder="Please enter your message"
                 rows={6}
-                className="w-full border border-gray-200 rounded-md p-4 resize-none focus:outline-none focus:ring-2 focus:ring-[#FFCB05]"
+                className="w-full border border-gray-200 rounded-md p-4 resize-none focus:outline-none focus:ring-2 focus:ring-[#327D59]"
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-[#FFCB05] text-white h-12 rounded-md"
+              className="w-full bg-[#327D59] text-white h-12 rounded-md"
               data-aos="fade-up"
               data-aos-delay={500}
             >

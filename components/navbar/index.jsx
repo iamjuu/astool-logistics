@@ -10,10 +10,10 @@ import Image from "next/image";
 
 const navLinks = [
   { href: "#hero", label: "Home" },
+  { href: "#about", label: "About" },
   { href: "#solution", label: "Solution" },
   { href: "#project", label: "Projects" },
   { href: "#blog", label: "Blog" },
-  { href: "#about", label: "About" },
 ];
 
 const Header = () => {
@@ -38,7 +38,7 @@ const Header = () => {
                 data-aos-delay={100}
                 src={Logo}
                 alt="logo"
-                className="w-36 h-36"
+                className="w-36 "
                 width={198}
                 height={72}
               />
@@ -51,7 +51,7 @@ const Header = () => {
               <Link
                 key={link.label}
                 href={link.href}
-                className="relative text-[14px] font-medium duration-700 delay-200 hover:text-[#FFCB05] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#FFCB05] after:content-[''] after:transition-transform after:duration-300 hover:after:scale-x-100"
+                className="relative text-[14px] font-medium duration-700 delay-200 hover:text-[#327D59] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#327D59] after:content-[''] after:transition-transform after:duration-300 hover:after:scale-x-100"
                 data-aos="flip-down"
                 data-aos-delay={index * 400}
               >
@@ -68,7 +68,7 @@ const Header = () => {
           >
             <Button
               href="#contact"
-              className="flex items-center px-4 py-1  border-[#FFCB05] border rounded-[8px] text-gray-700 hover:[#FFCB05] font-medium transition-all duration-200"
+              className="flex items-center px-4 py-1  border-[#327D59] border rounded-[8px] text-gray-700 hover:text-white font-medium transition-all duration-200"
             >
               Contact Us
             </Button>
@@ -113,7 +113,7 @@ const Header = () => {
                   key={link.label}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center hover:text-[#FFCB05] space-x-3 px-3 py-2 rounded-md text-[12px] font-medium text-gray-700"
+                  className="flex items-center hover:text-[#327D59] space-x-3 px-3 py-2 rounded-md text-[12px] font-medium text-gray-700"
                   data-aos="flip-down"
                   data-aos-delay={index * 100}
                 >
@@ -123,7 +123,7 @@ const Header = () => {
               <Link
                 href="#contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#FFCB05] hover:bg-gray-50 transition-all duration-500 ease-in-out delay-100 hover:scale-105 hover:shadow-sm"
+                className="flex items-center space-x-3 px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#327D59] hover:bg-gray-50 transition-all duration-500 ease-in-out delay-100 hover:scale-105 hover:shadow-sm"
                 data-aos="flip-down"
               >
                 <Phone color="black" className="w-5 h-5" />

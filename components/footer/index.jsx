@@ -40,12 +40,12 @@ const Footer = () => {
 
   return (
     <>
-      <div className="w-full bg-[#ebeee4] text-black mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="w-full bg-white text-black mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 sm:gap-8">
           {/* Company Information */}
           <div className="sm:col-span-2 lg:col-span-1 xl:col-span-1">
             <div className="flex items-center mb-4 sm:mb-6">
-              <Image src={Logo} alt="Cam Design Logo" className=" w-36" />
+              <Image src={Logo} alt="ASTOOL Logistics Logo" className=" w-36" />
             </div>
             <div className="space-y-3 text-sm">
               <div className="flex items-start">
@@ -61,7 +61,10 @@ const Footer = () => {
                   />
                 </svg>
                 <span className="leading-relaxed">
-                  Edakked Railway Gate Beach Road, Edakkad, Kannur, Kerala
+                  PO.Box 14322<br />
+                  Harun Al-Rasheed St.<br />
+                  Al Sulai – Exit 18<br />
+                  Riyadh 11751
                 </span>
               </div>
               <div className="flex items-center">
@@ -73,7 +76,7 @@ const Footer = () => {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                <span>ajmal@gmail.com</span>
+                <span>mail@astoollogistics.com</span>
               </div>
               <div className="flex items-center">
                 <svg
@@ -83,14 +86,22 @@ const Footer = () => {
                 >
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
-                <span>971 4 250 1665</span>
+                <span>050 489 5205 </span>
+              </div>
+            </div>
+            {/* Locations */}
+            <div className="mt-4 sm:mt-6">
+              <div className="flex flex-wrap gap-3 sm:gap-4">
+                <span className="text-[#327D59] font-medium text-sm">RIYADH</span>
+                <span className="text-[#327D59] font-medium text-sm">JEDDAH</span>
+                <span className="text-[#327D59] font-medium text-sm">DAMMAM</span>
               </div>
             </div>
           </div>
 
           {/* Service */}
           <div className="sm:col-span-1 lg:col-span-1 xl:col-span-1">
-            <h2 className="text-[#FFCB05] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
+            <h2 className="text-[#327D59] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
               Service
             </h2>
             <nav className="space-y-2 text-sm">
@@ -101,7 +112,7 @@ const Footer = () => {
                 duration={500}
                 className="block hover:text-secondary transition-colors py-1"
               >
-                Labour Camp Wi-Fi
+                Freight Forwarding
               </Link>
               <Link
                 to="services"
@@ -110,7 +121,7 @@ const Footer = () => {
                 duration={500}
                 className="block hover:text-secondary transition-colors py-1"
               >
-                Staff Accommodation Wi-Fi
+                Warehousing & Storage
               </Link>
               <Link
                 to="services"
@@ -119,7 +130,7 @@ const Footer = () => {
                 duration={500}
                 className="block hover:text-secondary transition-colors py-1"
               >
-                Electrical Works
+                Supply Chain Management
               </Link>
               <Link
                 to="services"
@@ -128,7 +139,7 @@ const Footer = () => {
                 duration={500}
                 className="block hover:text-secondary transition-colors py-1"
               >
-                Time Attendance
+                Customs Clearance
               </Link>
               <Link
                 to="services"
@@ -137,7 +148,7 @@ const Footer = () => {
                 duration={500}
                 className="block hover:text-secondary transition-colors py-1"
               >
-                Networking & Telephone
+                Transportation Services
               </Link>
               <Link
                 to="services"
@@ -146,7 +157,7 @@ const Footer = () => {
                 duration={500}
                 className="block hover:text-secondary transition-colors py-1"
               >
-                CCTV & Security
+                Distribution & Delivery
               </Link>
               <Link
                 to="services"
@@ -155,15 +166,15 @@ const Footer = () => {
                 duration={500}
                 className="block hover:text-secondary transition-colors py-1"
               >
-                Residential Design
+                Logistics Consulting
               </Link>
             </nav>
           </div>
 
           {/* Company */}
           <div className="sm:col-span-1 lg:col-span-1 xl:col-span-1">
-            <h2 className="text-[#FFCB05] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
-              Tab-Deel
+            <h2 className="text-[#327D59] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
+              ASTOOL Logistics
             </h2>
             <nav className="space-y-2 text-sm">
               <Link
@@ -200,7 +211,7 @@ const Footer = () => {
                 duration={500}
                 className="block hover:text-secondary transition-colors py-1"
               >
-                Portfolio
+                Our Solutions
               </Link>
               <Link
                 to="blogs"
@@ -225,13 +236,13 @@ const Footer = () => {
 
           {/* Our Social Media */}
           <div className="sm:col-span-2 lg:col-span-1 xl:col-span-1">
-            <h2 className="text-[#FFCB05] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
+            <h2 className="text-[#327D59] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
               Our Social Media
             </h2>
             <nav className="space-y-2 text-sm">
               {/* Instagram */}
               <a
-                href="/"
+                href="#"
                 className="flex items-center hover:text-pink-500 transition-colors duration-300 group py-1"
               >
                 <svg
@@ -246,7 +257,7 @@ const Footer = () => {
 
               {/* Facebook */}
               <a
-                href="/"
+                href="#"
                 className="flex items-center hover:text-blue-600 transition-colors duration-300 group py-1"
               >
                 <svg
@@ -261,7 +272,7 @@ const Footer = () => {
 
               {/* LinkedIn */}
               <a
-                href="/"
+                href="#"
                 className="flex items-center hover:text-blue-700 transition-colors duration-300 group py-1"
               >
                 <svg
@@ -276,9 +287,7 @@ const Footer = () => {
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/97142501665"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="flex items-center hover:text-green-500 transition-colors duration-300 group py-1"
               >
                 <svg
@@ -295,7 +304,7 @@ const Footer = () => {
 
           {/* Join a Newsletter */}
           <div className="sm:col-span-2 lg:col-span-1 xl:col-span-1">
-            <h1 className="text-[#FFCB05] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
+            <h1 className="text-[#327D59] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
               Join a Newsletter
             </h1>
             <form onSubmit={handleNewsletterSubmit} className="space-y-3">
@@ -306,7 +315,7 @@ const Footer = () => {
              <input
   type="email"
   placeholder="Enter your email"
-  className="w-full border border-gray-200 rounded-md h-12 px-4 focus:outline-none focus:ring-2 focus:ring-[#FFCB05]"
+  className="w-full border border-gray-200 rounded-md h-12 px-4 focus:outline-none focus:ring-2 focus:ring-[#327D59]"
 
 />
 
@@ -314,7 +323,7 @@ const Footer = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-secondary text-white px-4 py-2.5 rounded hover:bg-[#FFCB05] bg-[#FFCB05] transition-colors text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                className="w-full bg-secondary text-white px-4 py-2.5 rounded hover:bg-[#327D59] bg-[#327D59] transition-colors text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isSubmitting ? (
                   <>
@@ -345,7 +354,7 @@ const Footer = () => {
                 )}
               </button>
               <p className="text-xs text-gray-400 mt-4">
-                Tabdeel © 2025 All rights reserved | Privacy Policy | Terms &
+                ASTOOL Logistics © 2025 All rights reserved | Privacy Policy | Terms &
                 Conditions
               </p>
             </form>

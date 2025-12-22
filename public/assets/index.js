@@ -1,5 +1,5 @@
-import Logo from "./images/Tabdeel_Logo.svg";
-import Backgound from "./images/background.svg";
+import Logo from "./images/ASTOOL_logo_page.png";
+import Backgound from "./images/asoollogobackground.svg";
 import TestHero from "./images/TESTHERO.png";
 import AboutImage from "./images/aboutimage.jpeg";
 import Service1 from "./images/pexels-bulat369-1243575272-32588556.jpg";
