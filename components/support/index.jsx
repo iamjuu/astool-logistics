@@ -22,17 +22,16 @@ const index = () => {
 
             <h1 className="text-[24px]">
             Support
-Future-Driven Solutions
-For Smarter, Safer Businesses
+Reliable Logistics Solutions
+For Efficient Transportation Services
             </h1>
               <p className="text-gray-600 text-base sm:text-lg lg:text-xl leading-relaxed">
-                At Tabdeel, we go beyond solutions — shaping smarter, safer, and
-                more connected spaces across the UAE. With affordable
-                innovation, certified engineers, and faster service, we empower
-                homes and businesses with electrical works, CCTV security, home
-                automation, networking, and time-attendance systems. Our
-                UAE-wide presence makes us the trusted partner for clients in
-                Dubai, Sharjah, Abu Dhabi, and beyond.
+                At Astool Alshaula Transportation Services, we go beyond logistics — delivering
+                comprehensive transportation solutions across the Kingdom of Saudi Arabia. With our
+                commitment to excellence, latest vehicle models, and efficient operations, we provide
+                reliable land transportation services for businesses and individuals. Our extensive
+                fleet and KSA-wide presence make us the trusted partner for clients in Riyadh and
+                throughout the Kingdom, ensuring your goods reach their destination safely and on time.
               </p>
           
             </>

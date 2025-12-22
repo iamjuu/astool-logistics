@@ -74,9 +74,7 @@ const index = () => {
         <div className="w-full mt-4 md:mt-8" data-aos="fade-up" data-aos-delay="150">
             <div className=' px-2 md:px-20 '>
           <p className="w-full py-10 rounded-xl border border-[#327D59] bg-white/30 p-6 text-base leading-relaxed text-gray-700 shadow-sm">
-        Tabdeel delivers The Change You Need in electrical, security, and automation systems. From powering your
-        operations to protecting your people and connecting your spaces, we provide future-ready solutions trusted
-        across the UAE.
+        Astool Alshaula Transportation Services embarked on its journey in 2010, offering top-notch logistics solutions in Riyadh. With a commitment to excellence and customer satisfaction, we swiftly expanded our operations to All over K.S.A becoming a trusted name in the logistics industry across the Kingdom of Saudi Arabia. We specialize in providing comprehensive logistics solutions to meet the diverse needs of our clients. It includes a large number of Latest models that meet all land transportation operations and needs inside and outside the Kingdom of Saudi Arabia with high efficiency and effectiveness.
       </p>
       </div>
     </div>

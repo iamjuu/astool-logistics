@@ -31,38 +31,41 @@ const montserrat = localFont({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://swym.digital"),
+  metadataBase: new URL("https://astool.com"),
   title: {
-    default: "SWYM Digital Marketing",
-    template: "%s | SWYM Digital Marketing",
+    default: "Astool Alshaula Transportation Services",
+    template: "%s | Astool Alshaula Transportation Services",
   },
   description:
-    "SWYM Digital provides reliable IT, infrastructure, and digital solutions across Dubai and the UAE.",
+    "Astool Alshaula Transportation Services offers top-notch logistics solutions in Riyadh and across the Kingdom of Saudi Arabia. Specializing in comprehensive logistics and land transportation operations with the latest vehicle models for high efficiency.",
   keywords: [
-    "SWYM Digital",
-    "IT services",
-    "infrastructure",
-    "digital transformation",
-    "Dubai",
-    "UAE",
+    "Astool Alshaula",
+    "Transportation Services",
+    "Logistics Solutions",
+    "Land Transportation",
+    "Riyadh",
+    "KSA",
+    "Saudi Arabia",
+    "Freight Services",
+    "Transportation Company",
   ],
-  authors: [{ name: "SWYM Digital" }],
-  creator: "SWYM Digital",
+  authors: [{ name: "Astool Alshaula Transportation Services" }],
+  creator: "Astool Alshaula Transportation Services",
   icons: {
-    icon: "/assets/images/Tabdeel_Logo.svg",
+    icon: "/assets/images/ASTOOL_logo_page.png",
   },
   openGraph: {
-    title: "SWYM Digital Marketing",
+    title: "Astool Alshaula Transportation Services",
     description:
-      "Reliable IT and infrastructure solutions that scale with your business.",
+      "Top-notch logistics solutions in Riyadh and across the Kingdom of Saudi Arabia. Comprehensive logistics and land transportation operations with the latest vehicle models.",
     url: "/",
-    siteName: "SWYM Digital Marketing",
+    siteName: "Astool Alshaula Transportation Services",
     images: [
       {
         url: "/assets/images/TESTHERO.png",
         width: 1200,
         height: 630,
-        alt: "SWYM Digital Marketing",
+        alt: "Astool Alshaula Transportation Services",
       },
     ],
     locale: "en_US",
@@ -70,11 +73,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SWYM Digital Marketing",
+    title: "Astool Alshaula Transportation Services",
     description:
-      "Reliable IT and infrastructure solutions that scale with your business.",
+      "Top-notch logistics solutions in Riyadh and across the Kingdom of Saudi Arabia. Comprehensive logistics and land transportation operations with the latest vehicle models.",
     images: ["/assets/images/TESTHERO.png"],
-    creator: "@swymdigital",
+    creator: "@astool",
   },
   robots: {
     index: true,
