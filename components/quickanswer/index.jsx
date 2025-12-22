@@ -8,40 +8,40 @@ import "aos/dist/aos.css";
 
 const faqs = [
   {
-    q: "Can you improve weak WiFi signals in multi-floor buildings?",
-    a: "Yes. We design and deploy heat‑mapped WiFi with proper access point placement, structured cabling, and signal optimization for seamless coverage across floors.",
+    q: "What types of logistics services do you provide?",
+    a: "We offer comprehensive logistics solutions including freight forwarding, warehousing, distribution, supply chain management, and last-mile delivery services across the UAE and internationally.",
   },
   {
-    q: "Do you provide CCTV installation and maintenance?",
-    a: "We handle end‑to‑end CCTV solutions including site survey, installation, remote monitoring setup, and ongoing maintenance contracts.",
+    q: "Do you handle both domestic and international shipments?",
+    a: "Yes. We manage end-to-end logistics for domestic UAE deliveries as well as international imports, exports, and cross-border shipments with customs clearance support.",
   },
   {
-    q: "Can Tabdeel handle both residential and commercial projects?",
-    a: "Absolutely. Our team executes residential villas, retail, hospitality, warehouses, and mixed‑use projects across the UAE.",
+    q: "What is your delivery time frame for standard shipments?",
+    a: "Standard delivery times vary by destination: same-day for local UAE, 1-2 days for GCC, and 3-7 days for international shipments. Express options are available for urgent deliveries.",
   },
   {
-    q: "How quickly can your engineers respond to service requests?",
-    a: "Standard response within the same business day, with 24/7 priority support available under AMC.",
+    q: "Do you provide real-time tracking for shipments?",
+    a: "Yes. All shipments include real-time GPS tracking with SMS and email notifications at key milestones, accessible through our online portal or mobile app.",
   },
   {
-    q: "Do you offer UAE‑wide coverage (Dubai, Abu Dhabi, Sharjah, etc.)?",
-    a: "Yes, we cover all emirates and mobilize teams based on project scope and SLAs.",
+    q: "Can you handle temperature-controlled and fragile goods?",
+    a: "Absolutely. We have specialized cold chain logistics for perishables, pharmaceuticals, and temperature-sensitive items, plus secure handling for fragile and high-value cargo.",
   },
   {
-    q: "What certifications do your engineers and services comply with?",
-    a: "Projects adhere to local authority guidelines; engineers hold vendor and safety certifications relevant to scope.",
+    q: "What areas do you cover for logistics services?",
+    a: "We provide logistics coverage across all UAE emirates (Dubai, Abu Dhabi, Sharjah, etc.) and offer international shipping to major global destinations with partner networks.",
   },
   {
-    q: "Do you provide AMC (Annual Maintenance Contracts) for IT and security systems?",
-    a: "Yes. Flexible AMC packages include preventive visits, remote monitoring, and on‑call support.",
+    q: "Do you offer warehousing and inventory management services?",
+    a: "Yes. We provide secure warehousing facilities with inventory management, pick-and-pack services, and fulfillment solutions tailored to your business needs.",
   },
   {
-    q: "How does Tabdeel help businesses reduce costs?",
-    a: "By optimizing infrastructure, preventing downtime, and right‑sizing solutions for current and future needs.",
+    q: "How do you ensure cargo safety and security?",
+    a: "All shipments are fully insured, handled by certified professionals, and tracked throughout transit. We comply with international safety standards and security protocols.",
   },
   {
-    q: "Can your services scale as my business grows?",
-    a: "Our designs are modular and scalable so you can expand capacity without rework.",
+    q: "Can your logistics services integrate with our existing systems?",
+    a: "Yes. We offer API integration and EDI connectivity to seamlessly connect with your ERP, e-commerce platforms, and inventory management systems.",
   },
 ];
 

@@ -4,40 +4,40 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "Affordable, compliant, high-speed Wi-Fi with unlimited usage and 24/7 support — built for labour accommodations across the UAE.",
-      name: "Labour Camp Wi-Fi",
-      designation: "Smart Connectivity",
+        "Fast, reliable freight forwarding services with real-time tracking and customs clearance support — connecting businesses across the UAE and globally.",
+      name: "Freight Forwarding",
+      designation: "Global Shipping",
       src: Card1,
     },
     {
       quote:
-        " Reliable Wi-Fi solutions for staff housing with 99.9% uptime, modern equipment, and cost-effective digital access systems.",
-      name: "Staff Accommodation Wi-Fi",
-      designation: "Staff Accommodation Wi-Fi Smart Connectivity",
+        "Secure warehousing and distribution solutions with 99.9% inventory accuracy, modern facilities, and efficient fulfillment services.",
+      name: "Warehousing & Distribution",
+      designation: "Storage Solutions",
       src: Card2,    },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
+        "This logistics solution has significantly improved our supply chain efficiency. The real-time tracking and seamless integration made operations effortless.",
+      name: "Sarah Johnson",
+      designation: "Supply Chain Manager at TradeLink",
       src: Card3,    },
     {
       quote:
-        "HV & LV electrical installations and maintenance for commercial, industrial, and residential projects — safe, compliant, and reliable across the UAE.",
-      name: "Electrical Works",
-      designation: "Smart Infrastructure",
+        "Temperature-controlled logistics and cold chain management for perishables, pharmaceuticals, and sensitive goods — safe, compliant, and reliable across the UAE.",
+      name: "Cold Chain Logistics",
+      designation: "Temperature Control",
       src: Card4,    },
     {
       quote:
-        " 24/7 surveillance and advanced access control systems to keep your people, property, and assets secure.",
-      name: "CCTV & Security",
-      designation: "Smart Protection",
+        "24/7 last-mile delivery services with GPS tracking and instant notifications to keep your customers informed every step of the way.",
+      name: "Last-Mile Delivery",
+      designation: "Express Delivery",
       src: Card5,    },
       {
         quote:
-          " Structured cabling, VoIP, and telephone solutions that keep your business connected without interruptions.",
-        name: "Networking & Telephone",
-        designation: "Smart Connectivity",
+          "End-to-end supply chain management and logistics consulting that keeps your business operations running smoothly without interruptions.",
+        name: "Supply Chain Management",
+        designation: "Complete Solutions",
         src: Card6,    },
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;

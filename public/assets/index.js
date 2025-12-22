@@ -13,6 +13,9 @@ import Card4 from "./images/card4.png"
 import Card5 from "./images/card5.png"
 import Card6 from "./images/card6.png"
 
+import WahtsuppIocn from "./icons/whatsapp-svgrepo-com (1).svg"
+
 export { Logo, Backgound, TestHero, AboutImage, Service1, Service2, Service3,
-    Card1,Card2,Card3,Card4,Card5,Card6
+    Card1,Card2,Card3,Card4,Card5,Card6,
+    WahtsuppIocn
  };

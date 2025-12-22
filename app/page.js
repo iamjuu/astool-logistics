@@ -4,7 +4,7 @@ import Hero from "@/components/hero";
 import About from "@/components/about";
 import Support from "@/components/support";
 import Carousel from "@/components/caroseal";
-import { Backgound } from "@/public/assets";
+import { Backgound, WahtsuppIocn } from "@/public/assets";
 import Service from "@/components/service";
 import Footer from "@/components/footer";
 import QuickAnswer from "@/components/quickanswer";
@@ -88,6 +88,17 @@ export default function Home() {
         </div>
         <Footer />
       </div>
+      
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/7025715250"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-[70px] right-[20px] z-50   transition-all duration-300 hover:scale-110"
+        aria-label="Contact us on WhatsApp"
+      >
+     <Image src={WahtsuppIocn} alt="WhatsApp" width={70}  />
+      </a>
     </div>
   );
 }
