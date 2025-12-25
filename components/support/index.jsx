@@ -6,10 +6,7 @@ const index = () => {
     <div className="min-h-screen  py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Title - Centered */}
-        <div
-          className="text-center mb-12 lg:mb-16"
-          data-aos="fade-down"
-        ></div>
+        <div className="text-center mb-12 lg:mb-16" data-aos="fade-down"></div>
 
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
@@ -19,21 +16,21 @@ const index = () => {
             data-aos="fade-down"
           >
             <>
-
-            <h1 className="text-[24px]">
-            Support
-Reliable Logistics Solutions
-For Efficient Transportation Services
-            </h1>
+              <h1 className="text-[24px]">
+                Support Reliable Logistics Solutions For Efficient
+                Transportation Services
+              </h1>
               <p className="text-gray-600 text-base sm:text-lg lg:text-xl leading-relaxed">
-                At Astool Alshaula Transportation Services, we go beyond logistics — delivering
-                comprehensive transportation solutions across the Kingdom of Saudi Arabia. With our
-                commitment to excellence, latest vehicle models, and efficient operations, we provide
-                reliable land transportation services for businesses and individuals. Our extensive
-                fleet and KSA-wide presence make us the trusted partner for clients in Riyadh and
-                throughout the Kingdom, ensuring your goods reach their destination safely and on time.
+                At Astool Alshaula Transportation Services, we go beyond
+                logistics — delivering comprehensive transportation solutions
+                across the Kingdom of Saudi Arabia. With our commitment to
+                excellence, latest vehicle models, and efficient operations, we
+                provide reliable land transportation services for businesses and
+                individuals. Our extensive fleet and KSA-wide presence make us
+                the trusted partner for clients in Riyadh and throughout the
+                Kingdom, ensuring your goods reach their destination safely and
+                on time.
               </p>
-          
             </>
           </div>
 

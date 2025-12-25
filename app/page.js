@@ -4,7 +4,7 @@ import Hero from "@/components/hero";
 import About from "@/components/about";
 import Support from "@/components/support";
 import Carousel from "@/components/caroseal";
-import { Backgound, WahtsuppIocn } from "@/public/assets";
+import { Backgound, Brand1, Brand2, Brand3, Brand4, Brand5, Brand6, Brand7, Brand8, WahtsuppIocn } from "@/public/assets";
 import Service from "@/components/service";
 import Footer from "@/components/footer";
 import QuickAnswer from "@/components/quickanswer";
@@ -50,6 +50,42 @@ export default function Home() {
         "Gain real-time visibility into your supply chain with advanced analytics for smarter logistics decision-making.",
     },
   ];
+
+  const Brands =[
+    {id:1,
+      brandTitle:'Brand',
+      logo:Brand1
+    },
+    {id:2,
+      brandTitle:'Brand',
+      logo:Brand2
+    },
+    {id:3,
+      brandTitle:'Brand',
+      logo:Brand3
+    },
+    {id:4,
+      brandTitle:'Brand',
+      logo:Brand4
+    },
+    {id:5,
+      brandTitle:'Brand',
+      logo:Brand5
+    },
+    {id:6,
+      brandTitle:'Brand',
+      logo:Brand6
+    },
+    {id:7,
+      brandTitle:'Brand',
+      logo:Brand7
+    },
+    {id:8,
+      brandTitle:'Brand',
+      logo:Brand8
+    },
+
+  ]
   return (
     <div
       style={{
@@ -75,7 +111,7 @@ export default function Home() {
           <Support />
         </div>
         <div id="blog">
-          <Carousel items={items} />
+        <Carousel   Brands={Brands} items={items} />
         </div>
         <div id="contact">
           <Contact />
