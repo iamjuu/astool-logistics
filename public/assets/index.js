@@ -1,6 +1,6 @@
 import Logo from "./images/ASTOOL_logo_page.png";
 import Backgound from "./images/asoollogobackground.svg";
-import TestHero from "./images/TESTHERO.png";
+import TestHero from "./images/Gemini_Generated_Image_z67u1tz67u1tz67u-removebg-preview-Picsart-AiImageEnhancer.png";
 import AboutImage from "./images/aboutimage.jpeg";
 import Service1 from "./images/pexels-bulat369-1243575272-32588556.jpg";
 import Service2 from "./images/pexels-cookiecutter-17155842.jpg";
@@ -25,6 +25,20 @@ import Brand6 from "../assets/brand/logo with logistic en.jpg";
 import Brand7 from "../assets/brand/logo.webp";
 import Brand8 from "../assets/brand/Logom.png";
 
+
+//logistics
+
+import Logistics1 from "../assets/logistics/pexels-chanaka-906494 (1).jpg"
+import Logistics2 from "../assets/logistics/pexels-chanaka-906494.jpg"
+import Logistics3 from "../assets/logistics/pexels-elevate-1267325.jpg"
+import Logistics4 from "../assets/logistics/pexels-samuel-wolfl-628277-1427541.jpg"
+import Logistics5 from "../assets/logistics/pexels-tima-miroshnichenko-6169030.jpg"
+import Logistics6 from "../assets/logistics/pexels-tima-miroshnichenko-6169668.jpg"
+import Logistics7 from "../assets/logistics/pexels-tomfisk-3840447.jpg"
+import Logistics8 from "../assets/logistics/pexels-wolfgang-weiser-467045605-30350736.jpg"
+
+
+
 export {
   Logo,
   Backgound,
@@ -47,5 +61,6 @@ export {
   Brand5,
   Brand6,
   Brand7,
-  Brand8
+  Brand8,
+  Logistics1,Logistics2,Logistics3,Logistics4,Logistics5,Logistics6,Logistics7,Logistics8
 };

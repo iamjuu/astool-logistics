@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { AboutImage, TestHero } from '../../public/assets'
+import { AboutImage, Logistics1, Logistics2, Logistics4, TestHero } from '../../public/assets'
 import { Zap, ShieldCheck, Clock3, MapPin, Server } from 'lucide-react'
 
 const features = [
@@ -34,13 +34,13 @@ const features = [
 const index = () => {
   return (
 <div className="w-full">
-      <div className="max-w-7xl mx-auto flex flex-col gap-8">
+      <div className="max-w-7xl mx-auto flex py-16 flex-col gap-8">
     {/* Left: Image + Right: Features */}
         <div className="w-full flex flex-col md:flex-row gap-6" data-aos="fade-up">
       {/* Image */}
           <div className="w-full  md:w-[40%] flex justify-center md:justify-start" data-aos="zoom-in" data-aos-delay="100">
         <Image
-          src={AboutImage}
+          src={Logistics4}
           alt="About Tabdeel"
           className="w-full max-w-xs md:w-96 rounded-xl object-cover"
           priority

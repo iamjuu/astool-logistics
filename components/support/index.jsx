@@ -1,5 +1,5 @@
 import React from "react";
-import { Service1, Service2, Service3 } from "../../public/assets";
+import { Logistics1, Logistics4, Logistics6, Logistics7, Logistics8, Service1, Service2, Service3 } from "../../public/assets";
 import Image from "next/image";
 const index = () => {
   return (
@@ -41,7 +41,7 @@ const index = () => {
               <div className="row-span-2 col-span-1">
                 <div className="relative h-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
                   <Image
-                    src={Service1}
+                    src={Logistics1}
                     alt="Modern exterior design with contemporary architecture"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -53,7 +53,7 @@ const index = () => {
               <div className="col-span-1">
                 <div className="relative h-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
                   <Image
-                    src={Service2}
+                    src={Logistics6}
                     alt="Elegant bedroom interior design"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -65,7 +65,7 @@ const index = () => {
               <div className="col-span-1">
                 <div className="relative h-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
                   <Image
-                    src={Service3}
+                    src={Logistics8}
                     alt="Modern living room interior design"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />

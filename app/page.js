@@ -9,6 +9,7 @@ import Service from "@/components/service";
 import Footer from "@/components/footer";
 import QuickAnswer from "@/components/quickanswer";
 import Contact from "@/components/contect";
+import OurServices from "@/components/ourservices";
 import { Truck, Package, Route, Clock, Wallet, BarChart3 } from "lucide-react";
 export default function Home() {
   const items = [
@@ -100,7 +101,7 @@ export default function Home() {
         <div>
           <Navbar />
         </div>
-        <div id="hero">
+        <div   id="hero">
           <Hero />
         </div>
 
@@ -109,6 +110,9 @@ export default function Home() {
         </div>
         <div id="project">
           <Support />
+        </div>
+        <div id="services">
+          <OurServices />
         </div>
         <div id="blog">
         <Carousel   Brands={Brands} items={items} />
