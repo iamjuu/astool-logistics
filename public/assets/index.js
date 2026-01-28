@@ -1,4 +1,4 @@
-import Logo from "./images/newlog.png";
+import Logo from "./logo/ASTOOL FOLDER for PDF.png";
 import Backgound from "./images/asoollogobackground.svg";
 import TestHero from "./images/Gemini_Generated_Image_z67u1tz67u1tz67u-removebg-preview-Picsart-AiImageEnhancer.png";
 import AboutImage from "./images/aboutimage.jpeg";
