@@ -3,10 +3,12 @@ import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { Logo } from "@/public/assets";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Footer = () => {
   const [showToast, setShowToast] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { t } = useLanguage();
 
   const handleNewsletterSubmit = async (e) => {
     e.preventDefault();
@@ -61,10 +63,10 @@ const Footer = () => {
                   />
                 </svg>
                 <span className="leading-relaxed">
-                  PO.Box 14322<br />
-                  Harun Al-Rasheed St.<br />
-                  Al Sulai – Exit 18<br />
-                  Riyadh 11751
+                  {t("footer.addressLine1")}<br />
+                  {t("footer.addressLine2")}<br />
+                  {t("footer.addressLine3")}<br />
+                  {t("footer.addressLine4")}
                 </span>
               </div>
               <div className="flex items-center">
@@ -102,142 +104,38 @@ const Footer = () => {
           {/* Service */}
           <div className="sm:col-span-1 lg:col-span-1 xl:col-span-1">
             <h2 className="text-[#327D59] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
-              Service
+              {t("footer.service")}
             </h2>
             <nav className="space-y-2 text-sm">
-              <Link
-                to="services"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Freight Forwarding
-              </Link>
-              <Link
-                to="services"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Warehousing & Storage
-              </Link>
-              <Link
-                to="services"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Supply Chain Management
-              </Link>
-              <Link
-                to="services"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Customs Clearance
-              </Link>
-              <Link
-                to="services"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Transportation Services
-              </Link>
-              <Link
-                to="services"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Distribution & Delivery
-              </Link>
-              <Link
-                to="services"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Logistics Consulting
-              </Link>
+              <Link to="services" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.freightForwarding")}</Link>
+              <Link to="services" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.warehousingStorage")}</Link>
+              <Link to="services" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.supplyChainMgmt")}</Link>
+              <Link to="services" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.customsClearance")}</Link>
+              <Link to="services" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.transportationServices")}</Link>
+              <Link to="services" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.distributionDelivery")}</Link>
+              <Link to="services" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.logisticsConsulting")}</Link>
             </nav>
           </div>
 
           {/* Company */}
           <div className="sm:col-span-1 lg:col-span-1 xl:col-span-1">
             <h2 className="text-[#327D59] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
-              ASTOOL Logistics
+              {t("footer.astoolLogistics")}
             </h2>
             <nav className="space-y-2 text-sm">
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                About Us
-              </Link>
-              <Link
-                to="services"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Our Services
-              </Link>
-              <Link
-                to="doctors"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Our Team
-              </Link>
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Our Solutions
-              </Link>
-              <Link
-                to="blogs"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Blog
-              </Link>
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="block hover:text-secondary transition-colors py-1"
-              >
-                Contact Us
-              </Link>
+              <Link to="about" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.aboutUs")}</Link>
+              <Link to="services" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.ourServices")}</Link>
+              <Link to="doctors" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.ourTeam")}</Link>
+              <Link to="about" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.ourSolutions")}</Link>
+              <Link to="blogs" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.blog")}</Link>
+              <Link to="contact" spy={true} smooth={true} duration={500} className="block hover:text-secondary transition-colors py-1">{t("footer.contactUs")}</Link>
             </nav>
           </div>
 
           {/* Our Social Media */}
           <div className="sm:col-span-2 lg:col-span-1 xl:col-span-1">
             <h2 className="text-[#327D59] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
-              Our Social Media
+              {t("footer.ourSocialMedia")}
             </h2>
             <nav className="space-y-2 text-sm">
               {/* Instagram */}
@@ -252,7 +150,7 @@ const Footer = () => {
                 >
                   <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 4.25a5.25 5.25 0 1 1 0 10.5a5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5zm5-2a1 1 0 1 1 0 2a1 1 0 0 1 0-2z" />
                 </svg>
-                Instagram
+                {t("footer.instagram")}
               </a>
 
               {/* Facebook */}
@@ -267,7 +165,7 @@ const Footer = () => {
                 >
                   <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-2.9h2v-2.2c0-2 1.2-3.1 3-3.1c.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2v1.9h2.4l-.4 2.9h-2v7A10 10 0 0 0 22 12z" />
                 </svg>
-                Facebook
+                {t("footer.facebook")}
               </a>
 
               {/* LinkedIn */}
@@ -282,7 +180,7 @@ const Footer = () => {
                 >
                   <path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-9.5 14v-7H7v7h2.5zm-1.2-8.1c.8 0 1.3-.5 1.3-1.2c0-.7-.5-1.2-1.2-1.2c-.7 0-1.3.5-1.3 1.2c0 .7.5 1.2 1.2 1.2zm9.2 8.1v-3.6c0-1.9-1-2.8-2.4-2.8c-1.1 0-1.6.6-1.9 1.1h-.1V10H11V17h2.4v-3.6c0-.2 0-.5.1-.7c.2-.5.6-.9 1.3-.9c.9 0 1.3.7 1.3 1.7V17H18z" />
                 </svg>
-                LinkedIn
+                {t("footer.linkedin")}
               </a>
 
               {/* WhatsApp */}
@@ -297,7 +195,7 @@ const Footer = () => {
                 >
                   <path d="M20.5 3.5a11.8 11.8 0 0 0-16.7 0a11.8 11.8 0 0 0-2.3 13.4L1 23l6.3-1.6a11.9 11.9 0 0 0 5.8 1.5c6.6 0 12-5.4 12-12c0-3.2-1.2-6.2-3.6-8.4zM12 20.3a9.3 9.3 0 0 1-4.7-1.3l-.3-.2l-3.7 1l1-3.6l-.2-.3a9.3 9.3 0 0 1 1.3-11.7a9.3 9.3 0 0 1 13.2 13.2a9.3 9.3 0 0 1-6.6 2.9zm5.2-6.8c-.3-.2-1.7-.9-2-1s-.5-.2-.7.2c-.2.3-.8 1-.9 1.1s-.3.2-.6 0s-1.2-.4-2.3-1.4c-.8-.7-1.4-1.5-1.6-1.8s0-.4.1-.6s.3-.4.4-.5c.2-.2.3-.3.4-.5s0-.4 0-.5s-.7-1.7-1-2.3c-.3-.7-.6-.6-.8-.6h-.6c-.2 0-.5.1-.7.3s-1 1-1 2.4s1 2.7 1.1 2.9s2.1 3.2 5.1 4.5c.7.3 1.2.5 1.6.6c.7.2 1.3.2 1.8.1c.6-.1 1.7-.7 1.9-1.3c.2-.6.2-1.1.2-1.3c0-.2-.3-.4-.6-.6z" />
                 </svg>
-                WhatsApp
+                {t("footer.whatsapp")}
               </a>
             </nav>
           </div>
@@ -305,16 +203,16 @@ const Footer = () => {
           {/* Join a Newsletter */}
           <div className="sm:col-span-2 lg:col-span-1 xl:col-span-1">
             <h1 className="text-[#327D59] font-[500] text-[18px] sm:text-lg mb-3 sm:mb-4">
-              Join a Newsletter
+              {t("footer.joinNewsletter")}
             </h1>
             <form onSubmit={handleNewsletterSubmit} className="space-y-3">
               <div>
                 <label className="block text-sm text-gray-300 mb-2">
-                  Your Email
+                  {t("footer.yourEmail")}
                 </label>
              <input
   type="email"
-  placeholder="Enter your email"
+  placeholder={t("footer.enterEmail")}
   className="w-full border border-gray-200 rounded-md h-12 px-4 focus:outline-none focus:ring-2 focus:ring-[#327D59]"
 
 />
@@ -347,15 +245,14 @@ const Footer = () => {
                         d="M4 12a8 8 0..."
                       ></path>
                     </svg>
-                    Subscribing...
+                    {t("footer.subscribing")}
                   </>
                 ) : (
-                  "Send"
+                  t("footer.send")
                 )}
               </button>
               <p className="text-xs text-gray-400 mt-4">
-                ASTOOL Logistics © 2025 All rights reserved | Privacy Policy | Terms &
-                Conditions
+                {t("footer.copyright")}
               </p>
             </form>
           </div>
@@ -380,9 +277,9 @@ const Footer = () => {
               />
             </svg>
             <div>
-              <p className="font-semibold text-sm sm:text-base">Success!</p>
+              <p className="font-semibold text-sm sm:text-base">{t("footer.success")}</p>
               <p className="text-xs sm:text-sm">
-                We will connect you.
+                {t("footer.weWillConnect")}
               </p>
             </div>
           </div>

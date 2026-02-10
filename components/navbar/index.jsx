@@ -4,20 +4,29 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 import Button from "../button";
-import { Menu, X, Phone } from "lucide-react"; // Import Lucide icons
+import { Menu, X, Phone, Globe } from "lucide-react";
 import { Logo } from "../../public/assets";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
-const navLinks = [
-  { href: "#hero", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#solution", label: "Solution" },
-  { href: "#project", label: "Projects" },
-  { href: "#blog", label: "Blog" },
+const navLinkKeys = [
+  { href: "#hero", key: "nav.home" },
+  { href: "#about", key: "nav.about" },
+  { href: "#solution", key: "nav.solution" },
+  { href: "#project", key: "nav.project" },
+  { href: "#blog", key: "nav.blog" },
+];
+
+const LANG_OPTIONS = [
+  { value: "en", label: "English" },
+  { value: "ar", label: "العربية" },
+  { value: "fr", label: "Français" },
+  { value: "hi", label: "हिंदी" },
 ];
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     AOS.init({
@@ -47,30 +56,45 @@ const Header = () => {
 
           {/* Desktop Navigation Menu */}
           <nav className="hidden md:flex items-center gap-[72px]">
-            {navLinks.map((link, index) => (
+            {navLinkKeys.map((link, index) => (
               <Link
-                key={link.label}
+                key={link.key}
                 href={link.href}
                 className="relative text-[14px] font-medium duration-700 delay-200 hover:text-[#327D59] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#327D59] after:content-[''] after:transition-transform after:duration-300 hover:after:scale-x-100"
                 data-aos="flip-down"
                 data-aos-delay={index * 400}
               >
-                {link.label}
+                {t(link.key)}
               </Link>
             ))}
           </nav>
 
-          {/* Desktop Contact Button */}
+          {/* Desktop: Language select + Contact Button */}
           <div
-            className="hidden md:flex  items-center"
+            className="hidden md:flex items-center gap-3"
             data-aos="flip-up"
             data-aos-delay={1000}
           >
+            <div className="flex items-center gap-1.5">
+              <Globe className="w-4 h-4 text-[#327D59]" aria-hidden />
+              <select
+                value={language}
+                onChange={(e) => setLanguage(e.target.value)}
+                className="text-[14px] font-medium text-gray-700 bg-transparent border border-[#327D59] rounded-[8px] px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-[#327D59]/50 cursor-pointer min-w-[100px]"
+                aria-label="Change language"
+              >
+                {LANG_OPTIONS.map((opt) => (
+                  <option key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </option>
+                ))}
+              </select>
+            </div>
             <Button
               href="#contact"
-              className="flex items-center px-4 py-1  border-[#327D59] border rounded-[8px] text-gray-700 hover:text-white font-medium transition-all duration-200"
+              className="flex items-center px-4 py-1 border-[#327D59] border rounded-[8px] text-gray-700 hover:text-white font-medium transition-all duration-200"
             >
-              Contact Us
+              {t("nav.contactUs")}
             </Button>
           </div>
 
@@ -108,18 +132,33 @@ const Header = () => {
               </Button>
             </div>
             <nav className="flex flex-col space-y-2 px-4 pt-2 pb-4">
-              {navLinks.map((link, index) => (
+              {navLinkKeys.map((link, index) => (
                 <Link
-                  key={link.label}
+                  key={link.key}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center hover:text-[#327D59] space-x-3 px-3 py-2 rounded-md text-[12px] font-medium text-gray-700"
                   data-aos="flip-down"
                   data-aos-delay={index * 100}
                 >
-                  <span>{link.label}</span>
+                  <span>{t(link.key)}</span>
                 </Link>
               ))}
+              <div className="flex items-center gap-2 px-3 py-2">
+                <Globe className="w-5 h-5 text-[#327D59]" />
+                <select
+                  value={language}
+                  onChange={(e) => setLanguage(e.target.value)}
+                  className="text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-md px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-[#327D59]/50 cursor-pointer flex-1"
+                  aria-label="Change language"
+                >
+                  {LANG_OPTIONS.map((opt) => (
+                    <option key={opt.value} value={opt.value}>
+                      {opt.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
               <Link
                 href="#contact"
                 onClick={() => setIsMenuOpen(false)}
@@ -127,7 +166,7 @@ const Header = () => {
                 data-aos="flip-down"
               >
                 <Phone color="black" className="w-5 h-5" />
-                <span>Contact Us</span>
+                <span>{t("nav.contactUs")}</span>
               </Link>
             </nav>
           </div>

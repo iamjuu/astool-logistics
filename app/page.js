@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
@@ -11,45 +12,17 @@ import QuickAnswer from "@/components/quickanswer";
 import Contact from "@/components/contect";
 import OurServices from "@/components/ourservices";
 import { Truck, Package, Route, Clock, Wallet, BarChart3 } from "lucide-react";
-export default function Home() {
-  const items = [
-    {
-      icon: <Truck />,
-      title: "Faster Delivery",
-      description:
-        "Streamline your supply chain with efficient logistics solutions that ensure timely delivery and reduced transit times.",
-    },
-    {
-      icon: <Package />,
-      title: "Better Customer Experience",
-      description:
-        "Deliver reliable, on-time shipments that enhance customer satisfaction and build long-term trust in your brand.",
-    },
-    {
-      icon: <Route />,
-      title: "Scalability & Growth",
-      description:
-        "Flexible logistics networks that grow with your business, supporting expansion across Dubai and the UAE.",
-    },
+import { useLanguage } from "@/context/LanguageContext";
 
-    {
-      icon: <Clock />,
-      title: "24/7 Availability",
-      description:
-        "Round-the-clock logistics support and tracking ensure your shipments are always monitored and on schedule.",
-    },
-    {
-      icon: <Wallet />,
-      title: "Cost Reduction",
-      description:
-        "Optimize shipping costs with efficient route planning and warehouse management designed to maximize savings.",
-    },
-    {
-      icon: <BarChart3 />,
-      title: "Data-Driven Insights​",
-      description:
-        "Gain real-time visibility into your supply chain with advanced analytics for smarter logistics decision-making.",
-    },
+export default function Home() {
+  const { t } = useLanguage();
+  const items = [
+    { icon: <Truck />, title: t("homeItems.item1Title"), description: t("homeItems.item1Desc") },
+    { icon: <Package />, title: t("homeItems.item2Title"), description: t("homeItems.item2Desc") },
+    { icon: <Route />, title: t("homeItems.item3Title"), description: t("homeItems.item3Desc") },
+    { icon: <Clock />, title: t("homeItems.item4Title"), description: t("homeItems.item4Desc") },
+    { icon: <Wallet />, title: t("homeItems.item5Title"), description: t("homeItems.item5Desc") },
+    { icon: <BarChart3 />, title: t("homeItems.item6Title"), description: t("homeItems.item6Desc") },
   ];
 
   const Brands =[

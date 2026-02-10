@@ -1,7 +1,11 @@
+"use client";
 import React from "react";
-import { Logistics1, Logistics4, Logistics6, Logistics7, Logistics8, Service1, Service2, Service3 } from "../../public/assets";
+import { Logistics1, Logistics6, Logistics8 } from "../../public/assets";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
+
 const index = () => {
+  const { t } = useLanguage();
   return (
     <div className="min-h-screen  py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,19 +21,10 @@ const index = () => {
           >
             <>
               <h1 className="text-[24px]">
-                Support Reliable Logistics Solutions For Efficient
-                Transportation Services
+                {t("support.title")}
               </h1>
               <p className="text-gray-600 text-base sm:text-lg lg:text-xl leading-relaxed">
-                At Astool Alshaula Transportation Services, we go beyond
-                logistics — delivering comprehensive transportation solutions
-                across the Kingdom of Saudi Arabia. With our commitment to
-                excellence, latest vehicle models, and efficient operations, we
-                provide reliable land transportation services for businesses and
-                individuals. Our extensive fleet and KSA-wide presence make us
-                the trusted partner for clients in Riyadh and throughout the
-                Kingdom, ensuring your goods reach their destination safely and
-                on time.
+                {t("support.paragraph")}
               </p>
             </>
           </div>

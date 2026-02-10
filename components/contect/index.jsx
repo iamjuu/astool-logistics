@@ -3,8 +3,10 @@ import React, { useEffect } from "react";
 import { Clock, Compass } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Index = () => {
+  const { t } = useLanguage();
   useEffect(() => {
     AOS.init({ duration: 800, once: false });
     AOS.refresh();
@@ -35,14 +37,13 @@ const Index = () => {
         {/* Left content */}
         <div data-aos="fade-up" data-aos-delay={0}>
           <div className="mb-6">
-            <h2 className="text-xl font-[400] text-[#327D59]">Share Your Details</h2>
+            <h2 className="text-xl font-[400] text-[#327D59]">{t("contact.shareDetails")}</h2>
           </div>
           <p className="text-gray-700 text-[14px]  leading-7 mb-8">
-            Have questions about our services?
+            {t("contact.intro1")}
           </p>
           <p className="text-gray-700 leading-7 mb-8">
-            Here are some of the most common queries we receive. If you need
-            personalized assistance, we’re just a message away.
+            {t("contact.intro2")}
           </p>
 
           <div className="grid sm:grid-cols-2 gap-8">
@@ -51,10 +52,9 @@ const Index = () => {
                 <Clock className="text-white" size={24} />
               </div>
               <div>
-                <p className="font-semibold mb-1">Time Response</p>
+                <p className="font-semibold mb-1">{t("contact.timeResponse")}</p>
                 <p className="text-gray-700 text-sm leading-6">
-                  we prioritize timely responses to
-                  ensure smooth community
+                  {t("contact.timeResponseDesc")}
                 </p>
               </div>
             </div>
@@ -64,10 +64,9 @@ const Index = () => {
                 <Compass className="text-white" size={24} />
               </div>
               <div>
-                <p className="font-semibold mb-1">Guided next steps</p>
+                <p className="font-semibold mb-1">{t("contact.guidedSteps")}</p>
                 <p className="text-gray-700 text-sm leading-6">
-                  Clear guidance at every stage — no
-                  guesswork, just support.
+                  {t("contact.guidedStepsDesc")}
                 </p>
               </div>
             </div>
@@ -79,41 +78,40 @@ const Index = () => {
           <div className="flex justify-end mb-6" data-aos="fade-up" data-aos-delay={250}>
             <button className="inline-flex items-center gap-2 bg-[#327D59] text-white px-5 py-3 rounded-full shadow-sm">
               <span className="h-2.5 w-2.5 rounded-full bg-white" />
-              Get in Touch
+              {t("contact.getInTouch")}
             </button>
           </div>
 
           <div className="mb-6" data-aos="fade-up" data-aos-delay={300}>
             <p className="text-gray-700 leading-7">
-              Let’s Start the Conversation  Have a project in mind?
+              {t("contact.conversationTitle")}
             </p>
             <p className="text-gray-700 leading-7">
-              Whether it’s electrical, security, or automation, our team is here to help.
-              Share your details and we’ll get back with the right solution — fast.
+              {t("contact.conversationDesc")}
             </p>
           </div>
 
           <form className="space-y-5" onSubmit={handleSubmit}>
             <div data-aos="fade-up" data-aos-delay={350}>
-              <label className="block text-sm mb-2">Name</label>
+              <label className="block text-sm mb-2">{t("contact.name")}</label>
               <input
                 type="text"
-                placeholder="Please enter your name"
+                placeholder={t("contact.namePlaceholder")}
                 className="w-full border border-gray-200 rounded-md h-12 px-4 focus:outline-none focus:ring-2 focus:ring-[#327D59]"
               />
             </div>
             <div data-aos="fade-up" data-aos-delay={400}>
-              <label className="block text-sm mb-2">Email</label>
+              <label className="block text-sm mb-2">{t("contact.email")}</label>
               <input
                 type="email"
-                placeholder="Please enter your email"
+                placeholder={t("contact.emailPlaceholder")}
                 className="w-full border border-gray-200 rounded-md h-12 px-4 focus:outline-none focus:ring-2 focus:ring-[#327D59]"
               />
             </div>
             <div data-aos="fade-up" data-aos-delay={450}>
-              <label className="block text-sm mb-2">Message</label>
+              <label className="block text-sm mb-2">{t("contact.message")}</label>
               <textarea
-                placeholder="Please enter your message"
+                placeholder={t("contact.messagePlaceholder")}
                 rows={6}
                 className="w-full border border-gray-200 rounded-md p-4 resize-none focus:outline-none focus:ring-2 focus:ring-[#327D59]"
               />
@@ -124,7 +122,7 @@ const Index = () => {
               data-aos="fade-up"
               data-aos-delay={500}
             >
-              Send
+              {t("contact.send")}
             </button>
           </form>
         </div>

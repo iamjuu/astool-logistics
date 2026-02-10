@@ -4,9 +4,11 @@ import Image from "next/image";
 import { Backgound, TestHero } from "../../public/assets";
 import AnimationText from "../../animation/text";
 import Button from "../button";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Index = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
+  const { t } = useLanguage();
   return (
     <div className="flex w-full">
       <div className="max-w-7xl flex flex-col md:flex-row mx-auto">
@@ -16,14 +18,14 @@ const Index = () => {
             {/* ASTOOL ALSHAULA - Red Text */}
             <div className="mb-4 gap-4 flex">
               <AnimationText
-                text="ASTOOL"
+                text={t("hero.astool")}
                 delay={150}
                 animateBy="words"
                 direction="top"
                 className="text-[32px] font-bold text-red-600 mb-2"
               />
               <AnimationText
-                text="ALSHAULA"
+                text={t("hero.alshaula")}
                 delay={150}
                 animateBy="words"
                 direction="top"
@@ -34,14 +36,14 @@ const Index = () => {
             {/* TRANSPORTATION SERVICES - Green Text */}
             <div className="mb-4">
               <AnimationText
-                text="TRANSPORTATION"
+                text={t("hero.transportation")}
                 delay={120}
                 animateBy="words"
                 direction="top"
                 className="text-[22px] font-bold text-[#327D59] mb-2"
               />
               <AnimationText
-                text="SERVICES"
+                text={t("hero.services")}
                 delay={120}
                 animateBy="words"
                 direction="top"
@@ -51,7 +53,7 @@ const Index = () => {
 
             {/* Logistic services round the clock - Italic Green */}
             <AnimationText
-              text="Logistic services round the clock"
+              text={t("hero.tagline")}
               delay={80}
               animateBy="words"
               direction="top"
@@ -60,7 +62,7 @@ const Index = () => {
 
             {/* EFFICIENT MOBILITY - Bold Green */}
             <AnimationText
-              text="EFFICIENT MOBILITY"
+              text={t("hero.headline")}
               delay={100}
               animateBy="words"
               direction="top"
@@ -69,7 +71,7 @@ const Index = () => {
 
             {/* Paragraph Text - Green */}
             <AnimationText
-              text="Efficient transportation and logistics services are the lifeblood of global commerce, connecting businesses and consumers across vast distances. From shipping to warehousing and delivery, expertly managed logistics"
+              text={t("hero.paragraph")}
               delay={60}
               animateBy="words"
               direction="top"
@@ -78,8 +80,8 @@ const Index = () => {
           </div>
 
           <div className="w-full gap-5 flex">
-            <Button className="bg-[#327D59] text-white">Get Quote</Button>
-            <Button className=" border border-[#327D59]">Contact us</Button>
+            <Button className="bg-[#327D59] text-white">{t("hero.getQuote")}</Button>
+            <Button className=" border border-[#327D59]">{t("hero.contactUs")}</Button>
           </div>
         </div>
 

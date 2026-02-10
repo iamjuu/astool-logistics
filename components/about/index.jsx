@@ -1,37 +1,20 @@
+"use client";
 import React from 'react'
 import Image from 'next/image'
-import { AboutImage, Logistics1, Logistics2, Logistics4, TestHero } from '../../public/assets'
+import { Logistics4 } from '../../public/assets'
 import { Zap, ShieldCheck, Clock3, MapPin, Server } from 'lucide-react'
+import { useLanguage } from '@/context/LanguageContext'
 
-const features = [
-  {
-    icon: Zap,
-    title: 'Affordable Innovation',
-    description: 'Advanced solutions designed to fit your budget.'
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Certified Engineers',
-    description: 'Qualified experts who get it right the first time.'
-  },
-  {
-    icon: Clock3,
-    title: 'Faster Service',
-    description: 'Quick response times and efficient project delivery.'
-  },
-  {
-    icon: MapPin,
-    title: 'UAE‑Wide Presence',
-    description: 'Local expertise wherever your project is located.'
-  },
-  {
-    icon: Server,
-    title: 'Trusted Reliability',
-    description: 'Secure, future‑ready solutions delivered consistently.'
-  }
+const featureKeys = [
+  { icon: Zap, titleKey: 'about.feature1Title', descKey: 'about.feature1Desc' },
+  { icon: ShieldCheck, titleKey: 'about.feature2Title', descKey: 'about.feature2Desc' },
+  { icon: Clock3, titleKey: 'about.feature3Title', descKey: 'about.feature3Desc' },
+  { icon: MapPin, titleKey: 'about.feature4Title', descKey: 'about.feature4Desc' },
+  { icon: Server, titleKey: 'about.feature5Title', descKey: 'about.feature5Desc' },
 ]
 
 const index = () => {
+  const { t } = useLanguage()
   return (
 <div className="w-full">
       <div className="max-w-7xl mx-auto flex py-16 flex-col gap-8">
@@ -50,7 +33,7 @@ const index = () => {
       {/* Feature list */}
           <div className="w-full md:w-[60%]" data-aos="fade-down" data-aos-delay="150">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {features.map(({ icon: Icon, title, description }, idx) => (
+              {featureKeys.map(({ icon: Icon, titleKey, descKey }, idx) => (
             <div
               key={idx}
                   className="flex items-start gap-5 rounded-xl border border-[#327D59] bg-white p-5 shadow-sm transition-shadow hover:shadow-md"
@@ -61,8 +44,8 @@ const index = () => {
                 <Icon className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold text-lg">{title}</h3>
-                <p className="text-sm text-gray-600">{description}</p>
+                <h3 className="font-semibold text-lg">{t(titleKey)}</h3>
+                <p className="text-sm text-gray-600">{t(descKey)}</p>
               </div>
             </div>
           ))}
@@ -74,7 +57,7 @@ const index = () => {
         <div className="w-full mt-4 md:mt-8" data-aos="fade-up" data-aos-delay="150">
             <div className=' px-2 md:px-20 '>
           <p className="w-full py-10 rounded-xl border border-[#327D59] bg-white/30 p-6 text-base leading-relaxed text-gray-700 shadow-sm">
-        Astool Alshaula Transportation Services embarked on its journey in 2010, offering top-notch logistics solutions in Riyadh. With a commitment to excellence and customer satisfaction, we swiftly expanded our operations to All over K.S.A becoming a trusted name in the logistics industry across the Kingdom of Saudi Arabia. We specialize in providing comprehensive logistics solutions to meet the diverse needs of our clients. It includes a large number of Latest models that meet all land transportation operations and needs inside and outside the Kingdom of Saudi Arabia with high efficiency and effectiveness.
+        {t("about.paragraph")}
       </p>
       </div>
     </div>
