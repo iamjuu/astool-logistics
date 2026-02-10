@@ -20,8 +20,8 @@ const navLinkKeys = [
 const LANG_OPTIONS = [
   { value: "en", label: "English" },
   { value: "ar", label: "العربية" },
-  { value: "fr", label: "Français" },
-  { value: "hi", label: "हिंदी" },
+  // { value: "fr", label: "Français" },
+  // { value: "hi", label: "हिंदी" },
 ];
 
 const Header = () => {
