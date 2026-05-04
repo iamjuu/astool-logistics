@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import Image from 'next/image'
-import { Logistics4 } from '../../public/assets'
+import { Logistics4, NewImage1 } from '../../public/assets'
 import { Zap, ShieldCheck, Clock3, MapPin, Server } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 
@@ -23,7 +23,7 @@ const index = () => {
       {/* Image */}
           <div className="w-full  md:w-[40%] flex justify-center md:justify-start" data-aos="zoom-in" data-aos-delay="100">
         <Image
-          src={Logistics4}
+          src={NewImage1}
           alt="About Tabdeel"
           className="w-full max-w-xs md:w-96 rounded-xl object-cover"
           priority

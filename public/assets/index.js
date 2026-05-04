@@ -37,9 +37,13 @@ import Logistics6 from "../assets/logistics/pexels-tima-miroshnichenko-6169668.j
 import Logistics7 from "../assets/logistics/pexels-tomfisk-3840447.jpg"
 import Logistics8 from "../assets/logistics/pexels-wolfgang-weiser-467045605-30350736.jpg"
 
-
-
+import NewImage1 from "../assets/new/iamge1.jpeg"
+import NewImage2 from "../assets/new/image2.jpeg"
+import NewImage3 from "../assets/new/image 3.jpeg"
 export {
+  NewImage1,
+  NewImage2,
+  NewImage3,
   Logo,
   Backgound,
   TestHero,
