@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Logistics1, Logistics6, Logistics8, NewImage2, NewImage3 } from "../../public/assets";
+import { Logistics1, Logistics6, Logistics8, NewImage1, NewImage2, NewImage3 } from "../../public/assets";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -36,7 +36,7 @@ const index = () => {
               <div className="row-span-2 col-span-1">
                 <div className="relative h-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
                   <Image
-                    src={Logistics1}
+                    src={NewImage1}
                     alt="Modern exterior design with contemporary architecture"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />

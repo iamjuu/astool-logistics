@@ -5,7 +5,7 @@ import Hero from "@/components/hero";
 import About from "@/components/about";
 import Support from "@/components/support";
 import Carousel from "@/components/caroseal";
-import { Backgound, Brand1, Brand2, Brand3, Brand4, Brand5, Brand6, Brand7, Brand8, WahtsuppIocn } from "@/public/assets";
+import { Backgound, Brand1, Brand10, Brand2, Brand3, Brand4, Brand5, Brand6, Brand7, Brand8, Brand9, WahtsuppIocn } from "@/public/assets";
 import Service from "@/components/service";
 import Footer from "@/components/footer";
 import QuickAnswer from "@/components/quickanswer";
@@ -57,6 +57,13 @@ export default function Home() {
     {id:8,
       brandTitle:'Brand',
       logo:Brand8
+    },
+    {id:8,
+      brandTitle:'Brand',
+      logo:Brand9
+    },{id:8,
+      brandTitle:'Brand',
+      logo:Brand10
     },
 
   ]

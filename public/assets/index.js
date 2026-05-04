@@ -24,6 +24,8 @@ import Brand5 from "../assets/brand/shipa logo.svg.svg";
 import Brand6 from "../assets/brand/logo with logistic en.jpg";
 import Brand7 from "../assets/brand/logo.webp";
 import Brand8 from "../assets/brand/Logom.png";
+import Brand9 from "../assets/brand/brandpartner.png";
+import Brand10 from "../assets/brand/brandpartner1.jpg";
 
 
 //logistics
@@ -41,6 +43,8 @@ import NewImage1 from "../assets/new/iamge1.jpeg"
 import NewImage2 from "../assets/new/image2.jpeg"
 import NewImage3 from "../assets/new/image 3.jpeg"
 export {
+  Brand9,
+  Brand10,
   NewImage1,
   NewImage2,
   NewImage3,
