@@ -81,7 +81,15 @@ const Index = () => {
 
           <div className="w-full gap-5 flex">
             <Button className="bg-[#327D59] text-white">{t("hero.getQuote")}</Button>
-            <Button className=" border border-[#327D59]">{t("hero.contactUs")}</Button>
+            <Button
+              as="a"
+              href="https://astool-logistics.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" border border-[#327D59]"
+            >
+              {t("hero.contactUs")}
+            </Button>
           </div>
         </div>
 

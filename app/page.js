@@ -111,7 +111,7 @@ export default function Home() {
       
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/7025715250"
+        href="https://astool-logistics.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-[70px] right-[20px] z-50   transition-all duration-300 hover:scale-110"
