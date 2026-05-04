@@ -4,10 +4,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Carousel = ({ items, Brands }) => {
   const containerRef = useRef(null);
   const [isHovering, setIsHovering] = useState(false);
+  const { dir } = useLanguage();
   const brandItems = Brands && Brands.length > 0 ? [...Brands, ...Brands] : [];
 
   useEffect(() => {
@@ -24,11 +26,19 @@ const Carousel = ({ items, Brands }) => {
         const container = containerRef.current;
         const loopWidth = container.scrollWidth / 2;
 
-        // Reset at half width because the list is duplicated for seamless looping.
-        if (container.scrollLeft >= loopWidth) {
-          container.scrollLeft = 0;
+        if (dir === 'rtl') {
+          // For RTL, scroll leftward (decrease scrollLeft)
+          if (container.scrollLeft <= -loopWidth) {
+            container.scrollLeft = 0;
+          }
+          container.scrollLeft -= scrollSpeed;
+        } else {
+          // For LTR, scroll rightward (increase scrollLeft)
+          if (container.scrollLeft >= loopWidth) {
+            container.scrollLeft = 0;
+          }
+          container.scrollLeft += scrollSpeed;
         }
-        container.scrollLeft += scrollSpeed;
       }
       animationFrame = requestAnimationFrame(scroll);
     };
@@ -36,7 +46,7 @@ const Carousel = ({ items, Brands }) => {
     scroll();
 
     return () => cancelAnimationFrame(animationFrame);
-  }, [isHovering]);
+  }, [isHovering, dir]);
 
   return (
     <div
